@@ -17,23 +17,9 @@ int main() {
         cout << "Enter an element: ";
         cin >> arr[i];
     }
-
-    int mx = arr[0];
-    int min= arr[0];
-
-    for(int i = 1; i < size; i++) {
-        if(mx < arr[i] ) {
-            mx = arr[i];
-        }
-    }
-    for(int i = 1; i < size; i++) {
-        if(min > arr[i]) {
-            min = arr[i];
-        }
-    }
-
-    cout << "The maximum element is: " << mx << endl;
-    cout<<"The minimum element is: " << min << endl;
-
+   int sum = 0;
+   for(int i=0;i<size;i++){
+   	sum=sum+arr[i];
+   }
+   cout<<sum;
 }
-
